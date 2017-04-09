@@ -3,7 +3,7 @@
  */
 .site-header {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   flex-direction: row;
   align-items: center;
   border-top: 5px solid $grey-color-dark;
@@ -23,14 +23,17 @@
   font-weight: 600;
   line-height: 56px;
   letter-spacing: -1px;
-
+  margin: 0;
   margin-right: auto;
-  margin-bottom: 0;
   
 
   &,
   &:visited {
     color: $grey-color-dark;
+  }
+
+  @include media-query($on-palm) {
+    margin-right: 0;
   }
 }
 
