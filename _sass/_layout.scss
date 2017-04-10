@@ -133,10 +133,6 @@
  * Page content
  */
 .page-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
   padding: $spacing-unit;
 
   @include media-query($on-palm) {
@@ -149,12 +145,25 @@
 }
 
 .post-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
   margin-left: 0;
   list-style: none;
 
   > li {
     margin-bottom: $spacing-unit;
   }
+
+  @include media-query($on-laptop) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+
+  @include media-query($on-palm) {
+    grid-template-columns: 1fr;
+  }
+
 }
 
 .post-meta {
