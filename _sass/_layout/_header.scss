@@ -1,11 +1,8 @@
-/**
- * Site header
- */
 .site-header {
   @include flexy(column, flex-start, center);
   min-height: 6rem;
   background-color: $brand-color;
-  padding: 0 2rem;
+  padding: 0 $spacing-unit;
   
   @include mq(small-medium) {
     flex-direction: row;
@@ -18,10 +15,15 @@
   letter-spacing: -1px;
   margin: 0;
   margin-right: 0;
-  
-  &,
+  color: $background-color;
+
   &:visited {
-    color: $grey-color-dark;
+    color: darken($background-color, 15%);
+  }
+
+  &:hover {
+    color: darken($background-color, 40%);
+    text-decoration: none;
   }
 
   @include mq(small-medium) {
@@ -30,27 +32,11 @@
 }
 
 .site-nav {
- 
-  line-height: 56px;
+  line-height: 3rem;
 
   .page-link {
     margin: 0 1rem;
-    color: $text-color;
+    color: $background-color;
     line-height: $base-line-height;
-
-    /* Gaps between nav items, but not on the last one
-    &:not(:last-child) {
-      margin-right: 20px;
-    }*/
   }
-  @include media-query($on-palm) {
-    
-
-    .page-link {
-      width: auto;
-    }
-  }
-
-
-  
 }
