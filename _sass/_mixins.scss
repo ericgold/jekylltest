@@ -1,4 +1,4 @@
-/* MINIMA MEDIA QUERY
+
 
 $on-palm:          600px !default;
 $on-laptop:        800px !default;
@@ -15,20 +15,25 @@ $on-laptop:        800px !default;
     @content;
   }
 }
-*/
+
 
 // Flexbox Mixin ////////////////////////
 
-@mixin flexy($direction, $align-items: null) {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-direction: $direction;
-	flex-direction: $direction;
-	-webkit-align-items: $align-items;
-	align-items: $align-items;
+@mixin flexy(
+	$direction, 
+	$justify-content: null,
+	$align-items: null) {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction: $direction;
+		flex-direction: $direction;
+		-webkit-justify-content: $justify-content;
+		justify-content: $justify-content;
+		-webkit-align-items: $align-items;
+		align-items: $align-items;
 }
 
 // Media Query Mixins ///////////////////

@@ -2,10 +2,8 @@
  * Site header
  */
 .site-header {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
-  align-items: center;
+  @include flexy(column, flex-start, center);
+  
   border-top: 5px solid $grey-color-dark;
   border-bottom: 1px solid $grey-color-light;
   min-height: 56px;
@@ -13,8 +11,8 @@
   padding: 0 2rem;
   
 
-  @include media-query($on-palm) {
-    flex-direction: column;
+  @include mq(small-medium) {
+    flex-direction: row;
   }
 }
 
@@ -24,7 +22,7 @@
   line-height: 56px;
   letter-spacing: -1px;
   margin: 0;
-  margin-right: auto;
+  margin-right: 0;
   
 
   &,
@@ -32,8 +30,8 @@
     color: $grey-color-dark;
   }
 
-  @include media-query($on-palm) {
-    margin-right: 0;
+  @include mq(small-medium) {
+    margin-right: auto;
   }
 }
 
