@@ -3,9 +3,6 @@
  */
 .site-header {
   @include flexy(column, flex-start, center);
-  
-  border-top: 5px solid $grey-color-dark;
-  border-bottom: 1px solid $grey-color-light;
   min-height: 56px;
   background-color: $brand-color;
   padding: 0 2rem;
@@ -24,7 +21,6 @@
   margin: 0;
   margin-right: 0;
   
-
   &,
   &:visited {
     color: $grey-color-dark;
