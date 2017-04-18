@@ -1,6 +1,6 @@
 .site-header {
   @include flexy(column, flex-start, center);
-  min-height: 6rem;
+  height: 6rem;
   background-color: $brand-color;
   padding: 0 $spacing-unit;
   

@@ -1,21 +1,15 @@
-/**
- * Page content
- */
 .page-content {
   padding: $spacing-unit;
-
-  @include media-query($on-palm) {
-    padding: $spacing-unit calc($spacing-unit*3);
-  }
+  min-height: calc(100vh - 17rem);
 }
 
 .page-heading {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .post-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   grid-gap: 3rem;
   margin-left: 0;
   list-style: none;
@@ -24,13 +18,13 @@
     margin-bottom: $spacing-unit;
   }
 
-  @include media-query($on-laptop) {
+  @include mq(medium) {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
   }
 
-  @include media-query($on-palm) {
-    grid-template-columns: 1fr;
+  @include mq(large) {
+    grid-template-columns: repeat(3, 1fr);
   }
 
 }
@@ -42,5 +36,5 @@
 
 .post-link {
   display: block;
-  font-size: 24px;
+  font-size: 1.5rem;
 }

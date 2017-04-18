@@ -1,5 +1,6 @@
 .site-footer {
   @include flexy(column, space-around, center);
+  height: 4rem;
   border-top: 1px solid $grey-color-light;
   padding: $spacing-unit 0;
 
