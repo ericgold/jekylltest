@@ -6,52 +6,6 @@
 
 
 
-/**
- * Page content
- */
-.page-content {
-  padding: $spacing-unit;
-
-  @include media-query($on-palm) {
-    padding: $spacing-unit calc($spacing-unit*3);
-  }
-}
-
-.page-heading {
-  font-size: 20px;
-}
-
-.post-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 3rem;
-  margin-left: 0;
-  list-style: none;
-
-  > li {
-    margin-bottom: $spacing-unit;
-  }
-
-  @include media-query($on-laptop) {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
-  }
-
-  @include media-query($on-palm) {
-    grid-template-columns: 1fr;
-  }
-
-}
-
-.post-meta {
-  font-size: $small-font-size;
-  color: $grey-color;
-}
-
-.post-link {
-  display: block;
-  font-size: 24px;
-}
 
 
 
@@ -102,3 +56,4 @@
 
 @import '_header.scss';
 @import '_footer.scss';
+@import '_page.scss';
