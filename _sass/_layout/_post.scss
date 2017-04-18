@@ -1,17 +1,14 @@
-/**
- * Posts
- */
 .post-header {
   margin-bottom: $spacing-unit;
 }
 
 .post-title {
-  font-size: 42px;
+  font-size: 2.25rem;
   letter-spacing: -1px;
   line-height: 1;
 
-  @include media-query($on-laptop) {
-    font-size: 36px;
+  @include mq(large) {
+    font-size: 3rem;
   }
 }
 
@@ -19,26 +16,26 @@
   margin-bottom: $spacing-unit;
 
   h2 {
-    font-size: 32px;
+    font-size: 1.8rem;
 
-    @include media-query($on-laptop) {
-      font-size: 28px;
+    @include mq(large) {
+      font-size: 2rem;
     }
   }
 
   h3 {
-    font-size: 26px;
+    font-size: 1.4rem;
 
-    @include media-query($on-laptop) {
-      font-size: 22px;
+    @include mq(large) {
+      font-size: 1.6rem;
     }
   }
 
   h4 {
-    font-size: 20px;
+    font-size: 1.1rem;
 
-    @include media-query($on-laptop) {
-      font-size: 18px;
+    @include mq(large) {
+      font-size: 1.25rem;
     }
   }
 }
