@@ -1,7 +1,7 @@
 .site-header {
   @include flexy(column, flex-start, center);
   height: 6rem;
-  background-color: $brand-color;
+  background-image: radial-gradient(ellipse farthest-corner at 25rem 3rem, #89AC9D 0%, $brand-color 75%);
   padding: 0 $spacing-unit;
   
   @include mq(small-medium) {
