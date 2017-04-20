@@ -18,7 +18,7 @@
     
     border-radius: 1rem;
     padding: 1rem;
-    background-image: radial-gradient(ellipse farthest-corner at 20rem 12rem, #FBD7C8 0%, #89AC9D 50%, $brand-color 85%);
+    background-image: radial-gradient(ellipse farthest-corner at 20rem 12rem, $sandy 0%, $brand-color-light 50%, $brand-color 85%);
     
     p {
       color: $grey-color-dark;

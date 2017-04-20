@@ -15,14 +15,14 @@
   letter-spacing: -1px;
   margin: 0;
   margin-right: 0;
-  color: $background-color;
+  color: $sandy;
 
   &:visited {
-    color: darken($background-color, 15%);
+    color: darken($sandy, 10%);
   }
 
   &:hover {
-    color: darken($background-color, 40%);
+    color: darken($sandy, 20%);
     text-decoration: none;
   }
 
@@ -36,7 +36,10 @@
 
   .page-link {
     margin: 0 1rem;
-    color: $background-color;
+    color: $sandy;
     line-height: $base-line-height;
+  }
+  :hover {
+    color: darken($sandy, 20%);
   }
 }
