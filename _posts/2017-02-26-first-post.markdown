@@ -3,6 +3,7 @@ layout: post
 title:  "First!"
 date:   2017-02-26 17:55:00 -0800
 categories: jekyll update
+excerpt: <p>that's how you do it</p>
 ---
 
 
