@@ -15,11 +15,14 @@
   list-style: none;
 
   > li {
-    margin-bottom: $spacing-unit;
+    
     border-radius: 1rem;
     padding: 1rem;
-    background-image: radial-gradient(ellipse farthest-corner at 15rem 10rem, #89AC9D 0%, #FBD7C8 30%, $brand-color 95%);
-
+    background-image: radial-gradient(ellipse farthest-corner at 20rem 12rem, #FBD7C8 0%, #89AC9D 50%, $brand-color 85%);
+    
+    p {
+      color: $grey-color-dark;
+    }
   }
 
   @include mq(medium) {
@@ -42,3 +45,5 @@
   display: block;
   font-size: 1.5rem;
 }
+
+
