@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "You Emerge Victorious"
+excerpt: As you exit the maze...
 ---
 
 As you exit the maze, the crowd of villagers cheer appreciatively.
