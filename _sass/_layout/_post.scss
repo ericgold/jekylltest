@@ -1,5 +1,25 @@
+.post {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @include mq(medium) {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+
+
 .post-header {
   margin-bottom: $spacing-unit;
+  grid-column: 1;
+  grid-row: 1;
+
+  @include mq(medium) {
+    grid-column: 2;
+  }
 }
 
 .post-title {
@@ -14,6 +34,8 @@
 
 .post-content {
   margin-bottom: $spacing-unit;
+  grid-column: 1;
+  grid-row: 2;
 
   h2 {
     font-size: 1.8rem;
