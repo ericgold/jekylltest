@@ -7,6 +7,11 @@
   font-size: 1.25rem;
 }
 
+.home {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .post-list {
   display: grid;
   grid-template-columns: 1fr;
