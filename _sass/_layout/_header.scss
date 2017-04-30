@@ -40,9 +40,11 @@
     color: $sandy;
     text-decoration: none;
     line-height: $base-line-height;
+
+    &:hover {
+      color: darken($sandy, 20%);
+      text-decoration: underline;
+    }
   }
-  &:hover {
-    color: darken($sandy, 20%);
-    text-decoration: underline;
-  }
+  
 }
