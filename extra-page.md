@@ -2,6 +2,7 @@
 layout: page
 title: Extra
 permalink: /extra/
+excerpt: why is this page even here
 ---
 
 # Extra Page
