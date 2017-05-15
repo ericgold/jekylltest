@@ -23,7 +23,19 @@
 .social-media-list li {
   margin: 0 1rem;
 
+  a {
+    text-decoration: none;
+  }
+
   @include mq(large) {
     margin: 0 2rem;
   }
 }
+
+
+
+.username {
+  color: $brand-color;
+  text-decoration: none;
+}
+
